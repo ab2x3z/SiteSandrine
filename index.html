@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Martin - Osteopath</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <script>
+        // Redirect to language-specific page based on browser settings
+        const userLang = navigator.language || navigator.userLanguage;
+        if (userLang.startsWith('fr')) {
+            window.location.href = '/fr/';
+        } else {
+            window.location.href = '/en/';
+        }
+    </script>
+</body>
+</html>
