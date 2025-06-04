@@ -3,18 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sandrine Bélanger - Osteopath</title>
-    <link rel="stylesheet" href="/style.css">
+    <title>Sandrine Bélanger - Ostéopathe</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script>
-        // Redirect to language-specific page based on browser settings
-        const userLang = navigator.language || navigator.userLanguage;
-        if (userLang.startsWith('fr')) {
-            window.location.href = '/fr/';
-        } else {
-            window.location.href = '/en/';
-        }
-    </script>
+    <header>
+        <nav>
+            <div class="logo">Sandrine Bélanger</div>
+            <div class="nav-links">
+                <a href="#profile">Accueil</a>
+                <a href="#about-sandrine">À Propos</a>
+                <a href="#osteopathy-info">L'Ostéopathie</a>
+                <a href="#appointment">Rendez-vous</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="profile" class="profile-section hero">
+            <div class="profile-content">
+                <img src="https://via.placeholder.com/200x200.png?text=Sandrine+Bélanger" alt="Sandrine Bélanger" class="profile-pic">
+                <div class="profile-text">
+                    <h1>Sandrine Bélanger</h1>
+                    <p class="bio-short">Ostéopathe D.O. avec plus de 15 ans d'expérience, dédiée à votre bien-être holistique.</p>
+                    <p class="location">Pratique à la <strong>Clinique Inspiration</strong>.</p>
+                    <p class="location-details">Pour plus d'informations sur l'adresse et l'accès, veuillez consulter le site de la clinique lors de la prise de rendez-vous.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-sandrine" class="hero">
+            <h2>À Propos de Sandrine Bélanger</h2>
+            <p>Avec plus de 15 ans d'expérience en médecine ostéopathique, Sandrine Bélanger s'engage à fournir des soins personnalisés et des plans de traitement adaptés aux besoins de chaque patient. Sa pratique est axée sur une écoute attentive et une approche globale pour restaurer l'équilibre du corps et soulager durablement vos douleurs. Elle continue de se former régulièrement pour approfondir ses connaissances et offrir les meilleurs soins possibles.</p>
+        </section>
+
+        <section id="osteopathy-info" class="osteopathy-section">
+            <div class="hero-content" style="text-align:center; padding-bottom: 2rem;">
+                 <h2>L'Ostéopathie : Une Approche Complète Pour Votre Santé</h2>
+                <p>L'ostéopathie est une thérapie manuelle douce qui vise à comprendre les causes des symptômes du patient à partir d'une analyse complète des différents systèmes du corps. Elle repose sur des connaissances approfondies de l'anatomie et de la physiologie.</p>
+                <p>Sandrine Bélanger utilise des techniques variées et adaptées à chacun – structurelles, crâniennes, viscérales – pour redonner de la mobilité aux tissus et permettre au corps de retrouver son équilibre naturel et sa capacité d'auto-guérison.</p>
+            </div>
+
+            <h3 style="text-align:center; color: var(--primary-color); font-size: 2rem; margin-bottom: 1.5rem;">Pourquoi Consulter un Ostéopathe ?</h3>
+            <div class="services">
+                <div class="service-card">
+                    <h4>Douleurs et Troubles Musculo-Squelettiques</h4>
+                    <p>Mal de dos (lombalgie, dorsalgie, cervicalgie), douleurs articulaires (épaules, genoux, hanches), tensions musculaires, tendinites, sciatiques, névralgies.</p>
+                </div>
+                <div class="service-card">
+                    <h4>Système Nerveux et Crânien</h4>
+                    <p>Maux de tête, migraines, vertiges, certains acouphènes, troubles du sommeil, stress, anxiété, fatigue chronique.</p>
+                </div>
+                <div class="service-card">
+                    <h4>Système Digestif et Viscéral</h4>
+                    <p>Troubles digestifs fonctionnels (ballonnements, constipation, reflux gastro-œsophagien), douleurs abdominales.</p>
+                </div>
+                <div class="service-card">
+                    <h4>Femmes Enceintes et Nourrissons</h4>
+                    <p>Accompagnement de la grossesse (douleurs, préparation à l'accouchement), bilan post-partum. Pour les bébés : bilan après la naissance, coliques, reflux (RGO), troubles du sommeil, plagiocéphalie (tête plate).</p>
+                </div>
+                <div class="service-card">
+                    <h4>Sportifs</h4>
+                    <p>Prévention des blessures, amélioration des performances et de la récupération, traitement des traumatismes sportifs (entorses, contractures).</p>
+                </div>
+                <div class="service-card">
+                    <h4>Prévention et Bien-être</h4>
+                    <p>Un bilan ostéopathique annuel peut aider à maintenir un bon état de santé général, prévenir l'apparition de douleurs et optimiser votre vitalité.</p>
+                </div>
+            </div>
+            <p style="text-align:center; margin-top:2rem; font-size: 1.2rem; color: #666;">Un traitement ostéopathique peut vous aider à améliorer votre qualité de vie, réduire la douleur et optimiser votre état de santé général.</p>
+        </section>
+
+        <section id="appointment" class="contact">
+            <h2>Prendre Rendez-vous</h2>
+            <p>Pour prendre rendez-vous avec Sandrine Bélanger à la Clinique Inspiration :</p>
+            <a href="https://cliniqueinspiration.com/reservation-de-rendezvous/" target="_blank" class="appointment-button" style="display: inline-block; margin-top: 1rem; margin-bottom: 1.5rem; padding: 1rem 2rem; background-color: var(--secondary-color); color: white; text-decoration: none; border-radius: 4px; font-size: 1.2rem; transition: background-color 0.3s;">
+                Prendre rendez-vous en ligne
+            </a>
+            <h4>Instructions pour la prise de rendez-vous :</h4>
+            <ol style="text-align: left; max-width: 600px; margin: 1rem auto; padding-left: 20px;">
+                <li>Cliquez sur le bouton "Prendre rendez-vous en ligne" ci-dessus.</li>
+                <li>Vous serez redirigé(e) vers la plateforme de réservation de la Clinique Inspiration.</li>
+                <li>Recherchez Sandrine Bélanger, Ostéopathe, et choisissez le type de consultation souhaité.</li>
+                <li>Sélectionnez un créneau horaire qui vous convient parmi les disponibilités affichées.</li>
+                <li>Suivez les étapes indiquées pour confirmer votre réservation (création de compte ou connexion).</li>
+            </ol>
+            <p>En cas de difficulté ou si vous avez des questions, n'hésitez pas à contacter directement la Clinique Inspiration.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Sandrine Bélanger - Ostéopathe. Tous droits réservés.</p>
+    </footer>
 </body>
 </html>
